@@ -1,0 +1,114 @@
+#slides {
+    position: relative;
+}
+
+#slides .slides-container {
+    display: none;
+}
+
+#slides .scrollable {
+    *zoom: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+#slides .scrollable:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    width: 100%;
+}
+
+.slides-navigation a {
+    position: absolute;
+    display: block;
+    height: 450px;
+    width: 250px;
+}
+
+.slides-navigation a.prev {
+    left: 0;
+}
+
+.slides-navigation a.next {
+    right: 0;
+}
+
+.slides-pagination {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.slides-pagination a {
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+    margin: 8px;
+    overflow: hidden;
+    text-indent: -100px;
+}
+
+.slides-pagination a.current {
+    background: #F29700;
+    border: 1px solid #F29700;
+}
+
+.wide-container {
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.slider-tex {
+    margin-left: 60px;
+}
+
+.slider-title {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    width: 190px;
+    padding: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #F29700;
+    font-size: medium;
+}
+
+.slider-tex h1 {
+    color: #fff;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+}
+
+.slider-tex p {
+    padding-top: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Arial';
+    width: 540px;
+}
